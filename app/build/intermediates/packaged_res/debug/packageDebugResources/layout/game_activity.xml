@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/petImageGame"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pet_happy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/petImageGame"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/feedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/feed"/>
+
+        <Button
+            android:id="@+id/cleanButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clean"/>
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/play"/>
+    </LinearLayout>
+
+    <!-- Layout for Hunger, Cleanliness, and Happiness bars with text indicators -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/buttonLayout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/hungerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hunger: 100/100"/>
+
+        <ProgressBar
+            android:id="@+id/hungerBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"/>
+
+        <TextView
+            android:id="@+id/cleanlinessText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cleanliness: 100/100"/>
+
+        <ProgressBar
+            android:id="@+id/cleanlinessBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"/>
+
+        <TextView
+            android:id="@+id/happinessText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happiness: 100/100"/>
+
+        <ProgressBar
+            android:id="@+id/happinessBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"/>
+    </LinearLayout>
+</RelativeLayout>

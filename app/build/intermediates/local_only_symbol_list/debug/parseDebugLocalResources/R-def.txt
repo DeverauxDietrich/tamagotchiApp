@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable pet_clean
+drawable pet_eating
+drawable pet_happy
+id buttonLayout
+id cleanButton
+id cleanlinessBar
+id cleanlinessText
+id feedButton
+id happinessBar
+id happinessText
+id hungerBar
+id hungerText
+id petImage
+id petImageGame
+id playButton
+id startButton
+id title
+layout activity_main
+layout game_activity
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string clean
+string feed
+string play
+string start_game
+string welcome_text
+style Base.Theme.TamagotchiApp
+style Theme.TamagotchiApp
+xml backup_rules
+xml data_extraction_rules

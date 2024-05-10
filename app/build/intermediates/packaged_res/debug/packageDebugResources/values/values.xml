@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Tamagotchi App</string>
+    <string name="clean">Clean</string>
+    <string name="feed">Feed</string>
+    <string name="play">Play</string>
+    <string name="start_game">Get Started</string>
+    <string name="welcome_text">Welcome to Tamagotchi!</string>
+    <style name="Base.Theme.TamagotchiApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.TamagotchiApp" parent="Base.Theme.TamagotchiApp"/>
+</resources>
